@@ -22,7 +22,7 @@ const CONFIG = {
     // Customize each question and its possible responses
     questions: {
         first: {
-            text: "Do you like me luleeti?",                                    // First interaction
+            text: "Do you like me?",                                    // First interaction
             yesBtn: "Yes",                                             // Text for "Yes" button
             noBtn: "No",                                               // Text for "No" button
             secretAnswer: "I don't like you, I love you! 🧡"           // Secret hover message
@@ -34,15 +34,15 @@ const CONFIG = {
         },
         third: {
             text: "My love, Will you be my Valentine? 🌹", // The big question!
-            yesBtn: "Yes!😏",                                             // Text for "Yes" button
-            noBtn: "No "                                                 // Text for "No" button
+            yesBtn: "Yes!",                                             // Text for "Yes" button
+            noBtn: "I dare you to say no..."                                                 // Text for "No" button
         }
     },
 
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "Lk I love the earth you walk on ya 3omri!",  // Shows when they go past 6000%
+        extreme: "I LOVE YOU MORREEEEE MWAHAHAHAHA",  // Shows when they go past 6000%
         high: "Heehehhe you got a little more to go ☺️",              // Shows when they go past 3000%
         normal: "Ummm, is that it?"                          // Shows when they go past 0%
     },
@@ -51,7 +51,7 @@ const CONFIG = {
     celebration: {
         title: "Yay! I'm so blessed to have you in my life 🧡",
         message: "I hope you're free on the 14th, details will be provided 😉",
-        emojis: "🎁💖🤗💝💋❤️💕🧡"  // These will bounce around
+        emojis: "🧡"  // These will bounce around
     },
 
     // Color scheme for the website
