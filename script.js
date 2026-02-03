@@ -119,54 +119,14 @@ function showNextQuestion(questionNumber) {
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
     document.getElementById(`question${questionNumber}`).classList.remove('hidden');
 }
-let noLevel = 0;
-
+// Function to move the "No" button when clicked
 function moveButton(button) {
-  noLevel++;
+    const x = Math.random() * (window.innerWidth - button.offsetWidth);
+    const y = Math.random() * (window.innerHeight - button.offsetHeight);
 
-  // Level 1–2: wiggle (no moving yet)
-  if (noLevel <= 2) {
-    button.classList.remove("wiggle");
-    void button.offsetWidth; // re-trigger animation
-    button.classList.add("wiggle");
-    return;
-  }
-
-  // Level 3–5: teleport away
-  if (noLevel <= 5) {
-    teleport(button);
-    return;
-  }
-
-  // Level 6–7: teleport + shrink
-  if (noLevel <= 7) {
-    button.classList.add("shrink");
-    teleport(button);
-    return;
-  }
-
-  // Level 8+: disappear + replace with a "Yes 😈"
-  button.style.display = "none";
-
-  const yesBtn = document.querySelector("#yesBtn3"); // adjust if your id differs
-  if (yesBtn) {
-    yesBtn.textContent = "Okay okay YES 😈";
-    yesBtn.classList.add("wiggle");
-  }
-}
-
-function teleport(button) {
-  const padding = 20;
-  const maxX = window.innerWidth - button.offsetWidth - padding;
-  const maxY = window.innerHeight - button.offsetHeight - padding;
-
-  const x = Math.max(padding, Math.random() * maxX);
-  const y = Math.max(padding, Math.random() * maxY);
-
-  button.style.position = "fixed";
-  button.style.left = x + "px";
-  button.style.top = y + "px";
-
+    button.style.position = 'fixed';
+    button.style.left = x + 'px';
+    button.style.top = y + 'px';
 }
 
 // Love meter functionality
