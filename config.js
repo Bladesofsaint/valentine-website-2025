@@ -28,7 +28,7 @@ const CONFIG = {
             secretAnswer: "I don't like you, I love you! 🧡"           // Secret hover message
         },
         second: {
-            text: "Probability of me getting laid for this website 😘😊",                          // For the love meter
+            text: "Probability of me getting laid for this 😘😊",                          // For the love meter
             startText: "This much!",                                   // Text before the percentage
             nextBtn: "Next 🧡"                                         // Text for the next button
         },
@@ -42,9 +42,9 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "I LOVE YOU MORREEEEE MWAHAHAHAHA",  // Shows when they go past 6000%
-        high: "Heehehhe you got a little more to go ☺️",              // Shows when they go past 3000%
-        normal: "Ummm, is that it?"                          // Shows when they go past 0%
+        extreme: "Im so lucky i have you my love 😜😊",  // Shows when they go past 6000%
+        high: "OoOoOoOoOo soooo you like me?",              // Shows when they go past 3000%
+        normal: "very low? i meaaaan a chance is still a chance"                          // Shows when they go past 0%
     },
 
     // Messages that appear after they say "Yes!"
